@@ -3,4 +3,10 @@
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   height: 45px;
   padding: 12px 25px;
+  color: #fff;
+  transition: 0.5s all;
+  &:hover {
+    background-color: #6770ff;
+    color: #000000;
+  }
 }

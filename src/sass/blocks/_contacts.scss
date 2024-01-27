@@ -1,0 +1,116 @@
+.contacts {
+  padding: 120px 0 75px 0;
+  &__wrapper {
+    padding: 0 35px 0 52px;
+    display: grid;
+    grid-template-columns: 400px 585px;
+    justify-content: space-between;
+  }
+  &__title {
+    position: relative;
+    padding-left: 12px;
+    @include before_circle;
+    &:before {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &__change, &__give-data {
+    margin-top: 20px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  &__social {
+    margin-top: 20px;
+    a {
+      text-decoration: none;
+      margin-right: 25px;
+      img {
+        max-width: 30px;
+        max-height: 30px;
+      }
+      &:hover {
+        svg {
+          path {
+            fill: $main-color;
+          }
+        }
+      }
+      svg {
+        path {
+          transition: 0.3s all;
+          fill: black;
+        }
+      }
+    }
+  }
+  &__text {
+    padding-top: 6px;
+  }
+  &__img {
+    img {
+      width: 100%;
+    }
+  }
+  &__form {
+    margin-top: 30px;
+    display: grid;
+    grid-template-rows: 45px 190px 45px;
+    grid-template-columns: repeat(2, 280px);
+    row-gap: 30px;
+    justify-content: space-between;
+    label {
+      display: block;
+      position: absolute;
+      padding: 0 8px;
+      font-size: 12px;
+      top: -9px;
+      left: 12px;
+      background-color: #fff;
+    }
+  }
+  &__input {
+    position: relative;
+    input {
+      width: 100%;
+      height: 100%;
+      padding: 0 20px;
+      font-size: 12px;
+    }
+  }
+  &__textarea {
+    position: relative;
+    grid-column: 1 / 3;
+    textarea {
+      width: 100%;
+      height: 100%;
+      resize: none;
+      padding: 20px;
+      font-size: 12px;
+    }
+  }
+  &__button {
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  &__triggers {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-column: 1 / 3;
+    column-gap: 35px;
+  }
+  &__policy {
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    input {
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  }
+}

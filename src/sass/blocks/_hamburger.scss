@@ -9,11 +9,20 @@
   justify-content: space-between;
   align-items: flex-end;
   cursor: pointer;
+  &:hover {
+    span {
+      width: 36px;
+    }
+    .long {
+      width: 30px;
+    }
+  }
   span {
     display: block;
     height: 3px;
     width: 30px;
     background-color: #fff;
+    transition: 0.5s all;
   }
   .long {
     width: 36px;

@@ -38,6 +38,22 @@
     transform: translateX(-50%);
     bottom: 50px;
     width: 90px;
+    a {
+      text-decoration: none;
+      svg {
+        path {
+          transition: 0.3s all;
+        }
+      }
+      &:hover {
+        svg {
+          path {
+            fill: #fff;
+          }
+        }
+      }
+    }
+
   }
   &__list {
     list-style-type: none;
