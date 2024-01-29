@@ -80,6 +80,9 @@
       height: 100%;
       padding: 0 20px;
       font-size: 12px;
+      &:active, &:focus {
+        outline: none;
+      }
     }
   }
   &__textarea {
@@ -91,6 +94,9 @@
       resize: none;
       padding: 20px;
       font-size: 12px;
+      &:active, &:focus {
+        outline: none;
+      }
     }
   }
   &__button {
