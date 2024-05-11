@@ -32,14 +32,19 @@
   }
   &__item {
     position: relative;
-    &:before {
-      content: ' ';
-      position: absolute;
-      top: 68px;
-      width: 45px;
-      height: 1px;
-      background-color: #000;
+    &_anim1, &_anim2, &_anim3 {
+      &:before {
+        content: ' ';
+        position: absolute;
+        top: 68px;
+        width: 0px;
+        height: 1px;
+        background-color: #000;
+      }
     }
+
+
+
     &-header {
       position: relative;
       padding: 45px 0 0 100px;
@@ -91,7 +96,20 @@
           top: -16px;
           left: 0;
         }
+
       }
     }
   }
 }
+
+
+
+//.animation-stick:after {
+//  animation-name: heart;
+//  animation-duration: 1s;
+//  animation-timing-function: ease;
+//  animation-iteration-count: 1;
+//  &_second {
+//
+//  }
+//}

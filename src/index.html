@@ -26,23 +26,27 @@
           content="img/main_bg.jpg">
 
     <!-- Favicon  -->
-    <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="icons/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="icons/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="icons/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="icons/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="icons/favicon/android-icon-192x192.png">
+<!--    <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon/apple-icon-57x57.png">-->
+<!--    <link rel="apple-touch-icon" sizes="60x60" href="icons/favicon/apple-icon-60x60.png">-->
+<!--    <link rel="apple-touch-icon" sizes="72x72" href="icons/favicon/apple-icon-72x72.png">-->
+<!--    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicon/apple-icon-76x76.png">-->
+<!--    <link rel="apple-touch-icon" sizes="114x114" href="icons/favicon/apple-icon-114x114.png">-->
+<!--    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon/apple-icon-120x120.png">-->
+<!--    <link rel="apple-touch-icon" sizes="144x144" href="icons/favicon/apple-icon-144x144.png">-->
+<!--    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicon/apple-icon-152x152.png">-->
+<!--    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-icon-180x180.png">-->
+<!--    <link rel="icon" type="image/png" sizes="192x192" href="icons/favicon/android-icon-192x192.png">-->
+<!--    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">-->
+<!--    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon/favicon-96x96.png">-->
+<!--    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">-->
+<!--    <link rel="manifest" href="icons/favicon/manifest.json">-->
+<!--    <meta name="msapplication-TileColor" content="#ffffff">-->
+<!--    <meta name="msapplication-TileImage" content="icons/favicon/ms-icon-144x144.png">-->
+<!--    <meta name="theme-color" content="#ffffff">-->
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
-    <link rel="manifest" href="icons/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="icons/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+<!--    <link rel="manifest" href="/site.webmanifest">-->
 
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -63,7 +67,7 @@
                 <li><a class="menu__link" href="#exp">МОЙ ОПЫТ</a></li>
                 <li><a class="menu__link" href="#skills">МОИ НАВЫКИ</a></li>
                 <li><a class="menu__link" href="#portfolio">МОИ РАБОТЫ</a></li>
-                <li><a class="menu__link" href="#prices">ПРАЙС-ЛИСТ</a></li>
+<!--                <li><a class="menu__link" href="#prices">ПРАЙС-ЛИСТ</a></li>-->
                 <li><a class="menu__link" href="#contacts">КОНТАКТЫ</a></li>
             </ul>
         </nav>
@@ -102,7 +106,8 @@
     <div class="menu__overlay"></div>
 </div>
 
-<aside class="sidepanel">
+<aside class="sidepanel animate__animated animate__fadeInDown wow" data-wow-duraction="0.7s"
+       data-wow-delay="2s">
     <a target="_blank" href="https://www.linkedin.com/in/vladislav-malchevskiy-180702296/" class="linkedin">
         <svg width="20" height="20" viewBox="0 0 20 20" fill="red" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_121209_3)">
@@ -144,22 +149,23 @@
 </aside>
 
 <section class="promo">
-    <div class="hamburger">
+    <div class="hamburger animate__animated animate__fadeInTopRight wow" data-wow-duraction="0.7s"
+         data-wow-delay="2.5s">
         <span></span>
         <span class="long"></span>
         <span></span>
     </div>
 
     <div class="container">
-        <h1 class="title title_fs16 promo__subtitle animate__animated animate__fadeInLeft wow" data-wow-duraction="1s"
+        <h1 class="title title_fs16 promo__subtitle animate__animated animate__fadeInLeft wow" data-wow-duraction="0.7s"
             data-wow-delay="0.1s">
             Меня зовут Владислав Мальчевский
         </h1>
-        <div class="title title_fs48 promo__title animate__animated animate__fadeInRight wow" data-wow-duraction="1s"
-             data-wow-delay="2s">Я Frontend-разработчик из города Минск
+        <div class="title title_fs48 promo__title animate__animated animate__fadeInRight wow" data-wow-duraction="0.7s"
+             data-wow-delay="0.7s">Я Frontend-разработчик из города Минск
         </div>
-        <div class="promo__buttons animate__animated animate__fadeInDown wow" data-wow-duraction="1s"
-             data-wow-delay="3s">
+        <div class="promo__buttons animate__animated animate__fadeInDown wow" data-wow-duraction="0.7s"
+             data-wow-delay="1.4s">
             <a href="#portfolio" class="title title_fs14 button">Портфолио</a>
             <a href="#about" class="title title_fs14">Про меня</a>
         </div>
@@ -229,12 +235,14 @@
 
         <div class="exp__wrapper">
             <div class="exp__column">
-                <h3 class="title title_fs20 exp__column-title">Образование</h3>
+                <h3 class="title title_fs20 exp__column-title animate__animated animate__fadeInDown wow" data-wow-duraction="1s"
+                    data-wow-delay="0.1s">Образование</h3>
 
                 <ul>
-                    <li>
-                        <div class="exp__item">
-                            <div class="exp__item-header">
+                    <li class="animation-stick">
+                        <div class="exp__item exp__item_anim1">
+                            <div class="exp__item-header  animate__fadeIn wow" data-wow-duraction="1s"
+                                 data-wow-delay="1.7s">
                                 <div class="exp__icon"><img src="icons/experience/university.svg" alt="university">
                                 </div>
                                 <h4 class="exp__item-subtitle title title_fs14">
@@ -242,15 +250,17 @@
                                 </h4>
                                 <div class="exp__item-location">Студент | Минск (2022-now)</div>
                             </div>
-                            <div class="exp__item-body">
+                            <div  class="exp__item-body  animate__fadeInUp wow" data-wow-duraction="1s"
+                                 data-wow-delay="1.75s">
                                 На данный момент я студент 2 курса факультета Радиофизики и Компьютерных Технологий
                                 БГУ. Учусь по специальности "Компьютерная безопасность".
                             </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="exp__item">
-                            <div class="exp__item-header">
+                    <li class="animation-stick">
+                        <div class="exp__item exp__item_anim2">
+                            <div class="exp__item-header  animate__fadeIn wow" data-wow-duraction="1s"
+                                 data-wow-delay="2.2s">
                                 <div class="exp__icon"><img src="icons/experience/courses.svg" alt="courses">
                                 </div>
                                 <h4 class="exp__item-subtitle title title_fs14">
@@ -258,7 +268,8 @@
                                 </h4>
                                 <div class="exp__item-location">Курсы по Frontend-разработке</div>
                             </div>
-                            <div class="exp__item-body">
+                            <div id="lowestElementInExpSection" class="exp__item-body  animate__fadeInUp wow" data-wow-duraction="1s"
+                                 data-wow-delay="2.25s" >
                                 Основные знания по программированию я получил в ВУЗе, а frontend-разработке я учился по
                                 платным курсам.
                             </div>
@@ -267,24 +278,24 @@
                 </ul>
             </div>
             <div class="exp__column">
-                <h3 class="title title_fs20 exp__column-title">Опыт работы</h3>
+                <h3 class="title title_fs20 exp__column-title animate__animated animate__fadeInDown wow" data-wow-duraction="1s"
+                    data-wow-delay="0.1s">Опыт работы</h3>
 
                 <ul>
-                    <li>
-                        <div class="exp__item">
-                            <div class="exp__item-header">
+                    <li class="animation-stick">
+                        <div class="exp__item exp__item_anim3">
+                            <div class="exp__item-header  animate__fadeIn wow" data-wow-duraction="1s"
+                                 data-wow-delay="1.7s">
                                 <div class="exp__icon"><img src="icons/experience/developer.svg" alt="developer">
                                 </div>
                                 <h4 class="exp__item-subtitle title title_fs14">
-                                    Full-stack разработчик
+                                    Frontend-разработчик
                                 </h4>
-                                <div class="exp__item-location">Стартап-проект | Минск (2023-now)</div>
+                                <div class="exp__item-location">Стартап-проект | Минск (2023-2024)</div>
                             </div>
-                            <div class="exp__item-body">
-                                В стартап-проектах ты практически никогда не работаешь только по своей специальности.
-                                Именно поэтому
-                                кроме разработки пользовательских интерфейсов я занимался backend-разработкой, дизайном
-                                и копирайтингом.
+                            <div class="exp__item-body  animate__fadeInUp wow" data-wow-duraction="1s"
+                                 data-wow-delay="1.75s">
+                                Разрабатывал лендинг для мобильного приложения в команде с backend-разработчиком.  Реализовывал отправку данных с формы при помощи Google Apps Script.  Вёрстка адаптивная, кросбраузерная, seo-оптимизированная.  Из сторонних библиотек подключал swiper.js, animate.css и wow.js. Сборка проекта осуществлялась с помощью webpack.
                             </div>
                         </div>
                     </li>

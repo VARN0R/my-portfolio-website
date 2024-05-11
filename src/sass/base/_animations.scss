@@ -6,3 +6,13 @@
     width: auto;
   }
 }
+
+@keyframes heart {
+  from {
+    height: 0;
+  }
+  to {
+    height: calc(100% + 16px);
+  }
+}
+
