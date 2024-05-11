@@ -26,23 +26,6 @@
           content="img/main_bg.jpg">
 
     <!-- Favicon  -->
-<!--    <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon/apple-icon-57x57.png">-->
-<!--    <link rel="apple-touch-icon" sizes="60x60" href="icons/favicon/apple-icon-60x60.png">-->
-<!--    <link rel="apple-touch-icon" sizes="72x72" href="icons/favicon/apple-icon-72x72.png">-->
-<!--    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicon/apple-icon-76x76.png">-->
-<!--    <link rel="apple-touch-icon" sizes="114x114" href="icons/favicon/apple-icon-114x114.png">-->
-<!--    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon/apple-icon-120x120.png">-->
-<!--    <link rel="apple-touch-icon" sizes="144x144" href="icons/favicon/apple-icon-144x144.png">-->
-<!--    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicon/apple-icon-152x152.png">-->
-<!--    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-icon-180x180.png">-->
-<!--    <link rel="icon" type="image/png" sizes="192x192" href="icons/favicon/android-icon-192x192.png">-->
-<!--    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">-->
-<!--    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon/favicon-96x96.png">-->
-<!--    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">-->
-<!--    <link rel="manifest" href="icons/favicon/manifest.json">-->
-<!--    <meta name="msapplication-TileColor" content="#ffffff">-->
-<!--    <meta name="msapplication-TileImage" content="icons/favicon/ms-icon-144x144.png">-->
-<!--    <meta name="theme-color" content="#ffffff">-->
     <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
@@ -50,7 +33,7 @@
 
     <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body class="night-theme">
 
 <div class="menu">
     <div class="menu__block">
@@ -149,12 +132,15 @@
 </aside>
 
 <section class="promo">
-    <div class="hamburger animate__animated animate__fadeInTopRight wow" data-wow-duraction="0.7s"
-         data-wow-delay="2.5s">
+    <div class="hamburger">
         <span></span>
         <span class="long"></span>
         <span></span>
     </div>
+    <label id="switch" class="switch">
+        <input type="checkbox" id="slider">
+        <span class="slider round"></span>
+    </label>
 
     <div class="container">
         <h1 class="title title_fs16 promo__subtitle animate__animated animate__fadeInLeft wow" data-wow-duraction="0.7s"
@@ -230,7 +216,7 @@
 <section id="exp" class="exp">
     <div class="container">
         <h2 class="title title_fs16 exp__subtitle">Опыт</h2>
-        <div class="title title_fs36 exp__title">Чем я буду полезен</div>
+        <div class="title title_fs36 exp__title">Мой профессиональный путь</div>
         <div class="divider divider_center"></div>
 
         <div class="exp__wrapper">

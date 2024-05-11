@@ -5,11 +5,17 @@
 @import "base/variables";
 @import "base/mixins";
 @import "base/animations";
+@import "base/night-theme";
 
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+}
+
+:root {
+    --color-main: #617e9d;
+    --color-hover: #6770ff;
 }
 
 .container {
@@ -32,3 +38,4 @@
 @import "blocks/prices";
 @import "blocks/contacts";
 @import "blocks/media";
+@import "blocks/switcher";

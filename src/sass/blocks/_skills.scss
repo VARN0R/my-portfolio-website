@@ -64,7 +64,7 @@
     background-color: #E8E4DE;
     &-inner {
       height: 14px;
-      background-color: $main-color;
+      background-color: var(--color-main);
     }
   }
 }

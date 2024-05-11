@@ -1,0 +1,97 @@
+.night-theme {
+  color: #ccc;
+  background-color: rgb(36, 45, 74);
+}
+
+
+body.night-theme .exp {
+  opacity: 1;
+}
+
+body.night-theme .menu__block {
+  background-color: #49647f;
+}
+
+body.night-theme .title {
+  color: #ccc;
+}
+
+body.night-theme .about__description {
+  color: #ccc;
+}
+body.night-theme .about__item-description {
+  color: #ccc;
+}
+
+body.night-theme .about__img {
+  background-color: black;
+  img {
+    opacity: 0.7;
+  }
+}
+
+body.night-theme .exp__item_anim1:before, body.night-theme .exp__item_anim2:before, body.night-theme .exp__item_anim3:before {
+  background-color: #ccc;
+}
+
+body.night-theme .animation-stick:after {
+  background-color: #ccc;
+}
+
+body.night-theme .skills__item {
+  border: 1px solid #ccc;
+}
+
+body.night-theme .contacts__social a:hover {
+  svg {
+    path {
+      fill: #8bb5df;
+    }
+  }
+}
+
+body.night-theme .contacts__social a svg path {
+  fill: #fff;
+
+}
+
+body.night-theme .contacts__input {
+  background-color: rgb(36, 45, 74);
+  input {
+    background-color: rgb(36, 45, 74);
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  label {
+
+    background-color: rgb(36, 45, 74);
+  }
+
+}
+
+body.night-theme .contacts__textarea {
+  background-color: rgb(36, 45, 74);
+  textarea {
+    background-color: rgb(36, 45, 74);
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  label {
+    background-color: rgb(36, 45, 74);
+  }
+
+}
+
+
+body.night-theme .contacts__input input:-webkit-autofill {
+  background-color: red !important; /* Устанавливаем красный цвет фона */
+  /* Другие стили по вашему усмотрению */
+}
+
+body.night-theme .contacts__img {
+  background-color: black;
+  img {
+    opacity: 0.7;
+  }
+}
+

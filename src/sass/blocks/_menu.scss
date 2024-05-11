@@ -21,7 +21,7 @@
     z-index: 10;
     transition: 0.6s all;
     height: 100%;
-    background-color: $main-color;
+    background-color: var(--color-main);
   }
   &__close {
     position: absolute;
@@ -48,7 +48,7 @@
       &:hover {
         svg {
           path {
-            fill: #fff;
+            fill: var(--color-hover);
           }
         }
       }

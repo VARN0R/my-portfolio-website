@@ -50,38 +50,72 @@ function fillIcon(item, color) {
     }
 }
 
+
+const item = document.querySelector('.sidepanel__text');
+const divider = document.querySelector('.sidepanel__divider');
+const linkedin = document.querySelectorAll('.sidepanel .linkedin svg path');
+const inst = document.querySelectorAll('.sidepanel .inst svg path');
+const github = document.querySelectorAll('.sidepanel .github svg path');
+const githubIcon = document.querySelector('.sidepanel .github');
+const instIcon = document.querySelector('.sidepanel .inst');
+const linkedinIcon = document.querySelector('.sidepanel .linkedin');
+
 window.addEventListener('scroll', () => {
     const scrollPosition = window.scrollY;
-    const item = document.querySelector('.sidepanel__text');
-    const divider = document.querySelector('.sidepanel__divider');
-    const linkedin = document.querySelectorAll('.sidepanel .linkedin svg path');
-    const inst = document.querySelectorAll('.sidepanel .inst svg path');
-    const github = document.querySelectorAll('.sidepanel .github svg path');
+
     const sectionHeight = window.innerHeight;
 
-    if (scrollPosition > sectionHeight / 2) {
+    if (scrollPosition > sectionHeight / 2 && document.body.classList.contains("night-theme")) {
+        item.style.color = '#8bb5df';
+    } else if (scrollPosition > sectionHeight / 2){
         item.style.color = 'black';
     } else {
         item.style.color = 'white';
     }
 
-    if (scrollPosition > sectionHeight / 2 + 100) {
+    if (scrollPosition > sectionHeight / 2 + 100 && document.body.classList.contains("night-theme")) {
+        divider.style.backgroundColor = '#8bb5df';
+        fillIcon(github, '#8bb5df');
+    } else if (scrollPosition > sectionHeight / 2 + 100) {
         divider.style.backgroundColor = 'black';
         fillIcon(github, 'black');
-    } else {
+    }
+    else {
         divider.style.backgroundColor = 'white';
         fillIcon(github, 'white');
     }
 
-    if (scrollPosition > sectionHeight / 2 + 200) {
+    if (scrollPosition > sectionHeight / 2 + 200 && document.body.classList.contains("night-theme")) {
+        fillIcon(linkedin, '#8bb5df');
+        fillIcon(inst, '#8bb5df');
+    } else if (scrollPosition > sectionHeight / 2 + 200) {
         fillIcon(linkedin, 'black');
         fillIcon(inst, 'black');
-    } else {
+    }
+    else {
         fillIcon(linkedin, 'white');
         fillIcon(inst, 'white');
     }
 
 })
+
+//Function for change color because css hover dont work
+function changeColorAfterHover(icon, color, name) {
+    let prevColor;
+
+    icon.addEventListener('mouseover', () => {
+        prevColor = document.querySelectorAll(`.sidepanel .${name} svg path`)[0].style.fill;
+        fillIcon(color, 'var(--color-hover)');
+    })
+
+    icon.addEventListener('mouseout', () => {
+        fillIcon(color, `${prevColor}`);
+    })
+}
+
+changeColorAfterHover(githubIcon, github, "github");
+changeColorAfterHover(instIcon, inst, "inst");
+changeColorAfterHover(linkedinIcon, linkedin, "linkedin");
 
 
 
@@ -179,7 +213,6 @@ function playHorizontalStickAnimations(index) {
     stickAnimation.play();
     stickAnimation.finished.then(() => {
         let styleForSticksHorizontal = document.createElement('style');
-        console.log(index);
         styleForSticksHorizontal.innerHTML = `
             .exp__item_anim${index}:before {
                 width: 45px;
@@ -235,6 +268,47 @@ window.addEventListener("scroll", () => {
     }
 
 })
+
+
+//Switch to theme
+const theme = document.querySelector(".night-theme");
+const switchBtn = document.querySelector(".switch");
+const root = document.documentElement;
+
+
+
+function setTheme(themeName) {
+    if (themeName === "night") {
+        localStorage.setItem("theme", themeName);
+        theme.classList.add("night-theme");
+        document.getElementById('slider').checked = false;
+        root.style.setProperty('--color-main', '#617e9d');
+    } else {
+        localStorage.setItem("theme", themeName);
+        theme.classList.remove("night-theme");
+        document.getElementById('slider').checked = true;
+        root.style.setProperty('--color-main', '#68a0de');
+    }
+}
+function toggleTheme() {
+    if (localStorage.getItem("theme") === "night") {
+        setTheme("light");
+    } else if (localStorage.getItem("theme") === "light") {
+        setTheme("night");
+    }
+}
+
+
+if (localStorage.getItem("theme") !== null){
+    setTheme(localStorage.getItem("theme"));
+} else {
+    setTheme("night");
+}
+
+switchBtn.addEventListener("change", () => {
+    toggleTheme();
+})
+
 
 
 

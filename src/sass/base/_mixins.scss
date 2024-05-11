@@ -1,7 +1,7 @@
 @mixin before_circle {
   &:before {
     content: '';
-    background-color: $main-color;
+    background-color: var(--color-main);
     position: absolute;
     width: 36px;
     height: 36px;
