@@ -30,7 +30,7 @@
   }
   &__item {
     position: relative;
-    &:nth-child(3), &:nth-child(5), &:nth-child(6) {
+    &:nth-child(3), &:nth-child(5) {
       cursor: auto;
       &:hover {
         img {
@@ -41,6 +41,9 @@
           visibility: visible;
         }
       }
+    }
+    &:nth-child(6) {
+      filter: brightness(50%);
     }
     &-filter {
       filter: brightness(25%) grayscale(100%);
