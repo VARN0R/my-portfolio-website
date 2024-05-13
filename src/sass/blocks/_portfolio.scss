@@ -30,9 +30,11 @@
   }
   &__item {
     position: relative;
+    transition: 0.5s all;
     &:nth-child(3), &:nth-child(5) {
       cursor: auto;
       &:hover {
+        filter: brightness(100%);
         img {
           scale: 1;
         }
@@ -42,8 +44,15 @@
         }
       }
     }
+    &:hover {
+      filter: brightness(170%);
+    }
     &:nth-child(6) {
       filter: brightness(50%);
+      transition: 0.5s all;
+      &:hover {
+        filter: brightness(100%);
+      }
     }
     &-filter {
       filter: brightness(25%) grayscale(100%);
@@ -75,6 +84,7 @@
       transition: 0.5s all;
       &:hover {
         scale: 0.95;
+
       }
     }
   }
