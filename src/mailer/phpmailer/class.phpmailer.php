@@ -2254,7 +2254,7 @@ class PHPMailer
                 $body .= $this->attachAll('attachment', $this->boundary[1]);
                 break;
             default:
-                // Catch case 'plain' and case '', applies to simple `text/plain` and `text/html` body languages types
+                // Catch case 'plain' and case '', applies to simple `text/plain` and `text/html` body content types
                 //Reset the `Encoding` property in case we changed it for line length reasons
                 $this->Encoding = $bodyEncoding;
                 $body .= $this->encodeString($this->Body, $this->Encoding);
@@ -2712,7 +2712,7 @@ class PHPMailer
         $maxlen = 75 - 7 - strlen($this->CharSet);
         // Try to select the encoding which should produce the shortest output
         if ($matchcount > strlen($str) / 3) {
-            // More than a third of the languages will need encoding, so B encoding will be most efficient
+            // More than a third of the content will need encoding, so B encoding will be most efficient
             $encoding = 'B';
             if (function_exists('mb_strlen') && $this->hasMultiBytes($str)) {
                 // Use a custom function which correctly encodes and wraps long
@@ -2938,7 +2938,7 @@ class PHPMailer
      * the HTML refers to using the $cid value.
      * @param string $path Path to the attachment.
      * @param string $cid Content ID of the attachment; Use this to reference
-     *        the languages when using an embedded image in HTML.
+     *        the content when using an embedded image in HTML.
      * @param string $name Overrides the attachment name.
      * @param string $encoding File encoding (see $Encoding).
      * @param string $type File MIME type.
@@ -2983,7 +2983,7 @@ class PHPMailer
      * JPEG images use 'image/jpeg', GIF uses 'image/gif', PNG uses 'image/png'.
      * @param string $string The attachment binary data.
      * @param string $cid Content ID of the attachment; Use this to reference
-     *        the languages when using an embedded image in HTML.
+     *        the content when using an embedded image in HTML.
      * @param string $name
      * @param string $encoding File encoding (see $Encoding).
      * @param string $type MIME type.
