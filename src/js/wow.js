@@ -174,7 +174,7 @@
 
             if (typeof console !== 'undefined' && console !== null) {
                 console.warn('MutationObserver is not supported by your browser.');
-                console.warn('WOW.js cannot detect dom mutations, please call .sync() after loading new content.');
+                console.warn('WOW.js cannot detect dom mutations, please call .sync() after loading new languages.');
             }
         }
 
