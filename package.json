@@ -18,5 +18,9 @@
 		"last 2 chrome versions",
 		"last 2 firefox versions",
 		"last 2 ios versions"
-	]
+	],
+	"dependencies": {
+		"wow.js": "^1.2.2",
+		"wowjs": "^1.1.3"
+	}
 }

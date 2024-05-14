@@ -1,5 +1,6 @@
 'use strict'
 
+import WOW from 'wowjs';
 import form from "./modules/form";
 import hamburger from "./modules/hamburger";
 import language from "./modules/language";
@@ -10,6 +11,8 @@ import theme from "./modules/theme";
 
 
 window.addEventListener("DOMContentLoaded", () => {
+
+    new WOW.WOW().init();
     // Sending form
     form();
 
