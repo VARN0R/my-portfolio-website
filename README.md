@@ -1,12 +1,12 @@
 
 ## About Project 
-This is my single-page website, developed during the process of learning various technologies and tools. 
+My portfolio website, developed during the process of learning various technologies and tools.
 You can just look at the finished version - https://vladislav-malchevskiy.ru/.
  
 ## Project Features
 * Implementation of a submission forms using js and php mailer.
-* Implementation of language switching using js and php.
-* Implementation of light/dark theme switching (current theme is saved in the local storage).
+* Language switching using js and php.
+* Light/dark theme switching (current theme is saved in the local storage).
 * Implementation of the animation of elements using Web Animation API, animate.css and wow.js.
 * Implementation of other functional elements on the vanilla JavaScript.
 * Layout of the website is made in accordance with the BEM methodology and is adaptive, SEO-optimized. Also using Grid technology.
