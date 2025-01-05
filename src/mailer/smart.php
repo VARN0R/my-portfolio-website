@@ -2,6 +2,7 @@
 
 $name = $_POST['name'];
 $email = $_POST['E-mail'];
+$textarea = $_POST['textarea'];
 
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
@@ -29,7 +30,7 @@ $mail->isHTML(true);                                  // Set email format to HTM
 
 $mail->Subject = 'Данные';
 $mail->Body    = '
-		Пользователь оставил данные <br> 
+		Пользователь оставил cообщение: ' . $textarea . '  <br> 
 	Имя: ' . $name . ' <br>
 	E-mail: ' . $email . '';
 
