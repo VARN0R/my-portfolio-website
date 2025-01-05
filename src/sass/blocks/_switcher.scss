@@ -7,7 +7,6 @@
   height: 34px;
   margin-left: 40px;
   margin-top: 15px;
-
 }
 
 /* Hide default HTML checkbox */
@@ -43,7 +42,7 @@
   -webkit-transition: 0.4s;
   transition: 0.4s;
   box-shadow: 0 0px 15px #2020203d;
-  background: var(--color-main) url('https://i.ibb.co/FxzBYR9/night.png') no-repeat center;
+  background: var(--color-main) url("../icons/moon.png") no-repeat center;
 }
 
 input:checked + .slider {
@@ -58,7 +57,7 @@ input:checked + .slider:before {
   -webkit-transform: translateX(24px);
   -ms-transform: translateX(24px);
   transform: translateX(24px);
-  background: var(--color-main) url('https://i.ibb.co/7JfqXxB/sunny.png');
+  background: var(--color-main) url("../icons/sunny.png");
   background-repeat: no-repeat;
   background-position: center;
 }
