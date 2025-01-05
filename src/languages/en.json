@@ -1,4 +1,68 @@
 {
+  "menu__about": "About me",
+  "menu__exp": "My experience",
+  "menu__skills": "My skills",
+  "menu__works": "My works",
+  "menu__contacts": "Contacts",
+  
   "promo__subtitle": "My name is Vladislav Malchevskiy",
-  "promo__title": "I`m Frontend-developer from the city Minsk"
+  "promo__title": "I`m Frontend-developer from the city Minsk",
+  "sidepanel__text": "Social networks",
+  
+  "button__portfolio": "Portfolio",
+  "button__about": "About me",
+
+  "about__title": "My name is Vladislav",
+  "about__description": "I'm 19 years old. I've been working in front-end development for a year now and have no plans to stop. As a child, I loved drawing and creating unique things using various building sets. That's why this field resonates deeply with me. I also do design.",
+  "about__item_title": "Web-development",
+  "about__item_description_0":"I create landing pages and multi-page websites using modern and up-to-date technologies.",
+  "about__item_description_1":"I create beautiful and unique animations using Adobe After Effects and integrate them into my projects.",
+  "about__item_description_2":"I design user interfaces using Adobe Photoshop and Figma. My knowledge in this field simplifies development and allows me to create more precise and polished interfaces.",
+  "exp__subtitle": "Experience",
+  "exp__title": "My professional way",
+  "exp__column_title_0": "Education",
+  "exp__column_title_1": "Job experience",
+  "exp__item_location_0": "Student | Minsk (2022-now)",
+  "exp__item_location_1": "Frontend courses",
+  "exp__item_location_2": "StartUp project | Minsk (2023-2024)",
+  
+  "exp__item_body_0": "I am currently a third-year student at the Faculty of Radiophysics and Computer Technologies at BSU, studying 'Computer Security'",
+  "exp__item_body_1": "I gained my core programming knowledge at university and learned front-end development through courses.",
+  "exp__item_body_2": "I developed a landing page for a mobile application in collaboration with a backend developer. I implemented form data submission using Google Apps Script. The layout was responsive, cross-browser compatible, and SEO-optimized. I integrated external libraries such as swiper.js, animate.css, and wow.js. The project was built using Webpack.",
+  "exp__item_subtitle_0": "BSU",
+  "exp__item_subtitle_1": "Udemy",
+  "exp__item_subtitle_2": "Frontend-developer",
+
+  "skills__subtitle": "Skills",
+  "skills__title": "What I use in my work",
+
+  "skills__item_second_title_0": "Website Development",
+  "skills__item_second_title_1": "Data Handling",
+  "skills__item_second_title_2": "Creativity",
+  "skills__item_second_title_3": "Design Creation",
+
+  "portfolio__subtitle": "Portfolio",
+  "portfolio__title": "My projects",
+
+  "portfolio__item_text": "This project is being finalized and will be published soon.",
+
+  "contacts__subtitle": "Contacts",
+  "contacts__title": "Contact me",
+
+  "contacts__change": "In any way that is convenient for you.",
+  "contacts__give_data": "Or leave your contact information, and I will reach out to you.",
+  
+  "contacts__input_0": "Your name",
+  "contacts__input_1": "Your email",
+  "contacts__textarea": "Your message",
+
+  "contacts__button": "Send message",
+  "contacts__policy": "privacy policy",
+  "contacts__policy_text": "I agree with the"
+
+  
+
+
+  
+
 }

@@ -7,7 +7,7 @@ function form() {
         const form = e.target;
         let formData = new FormData(form);
 
-        ansForm.innerHTML = 'Загрузка...';
+        ansForm.innerHTML = 'Loading...';
 
         let response = await fetch('mailer/smart.php', {
             method: 'POST',
@@ -15,13 +15,13 @@ function form() {
         });
 
         if(response.ok) {
-            ansForm.innerHTML = "Ваши данные успешно отправлены!"
+            ansForm.innerHTML = "Completed!"
             form.reset();
             setTimeout(function(){
                 ansForm.innerHTML = ""
             }, 3000)
         } else {
-            alert("Ошибка");
+            alert("Error");
             ansForm.innerHTML = ""
         }
     }
