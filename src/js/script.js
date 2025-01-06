@@ -8,6 +8,7 @@ import sidepanel from "./modules/sidepanel";
 import skillsStripes from "./modules/skillsStripes";
 import stick from "./modules/stick";
 import theme from "./modules/theme";
+import movingTechnologies from './modules/movingTechnologies';
 
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -30,6 +31,8 @@ window.addEventListener("DOMContentLoaded", () => {
     stick();
 
     theme();
+
+    movingTechnologies();
 })
 
 

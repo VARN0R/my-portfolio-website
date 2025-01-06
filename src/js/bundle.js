@@ -785,6 +785,81 @@ function language() {
 
 /***/ }),
 
+/***/ "./src/js/modules/movingTechnologies.js":
+/*!**********************************************!*\
+  !*** ./src/js/modules/movingTechnologies.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function movingTechnologies() {
+  const images = document.querySelectorAll(".skills__item img");
+  const container = document.querySelectorAll(".skills__item");
+  
+   // Параметры движения
+   const speed = 0.5; // Максимальная скорость движения
+   const directions = []; // Храним направления движения для каждой картинки
+
+   // Инициализация
+   images.forEach((image, index) => {
+     const containerRect = container[0].getBoundingClientRect();
+
+     // Устанавливаем случайные начальные координаты
+     image.style.left = `${Math.random() * (containerRect.width - image.offsetWidth)}px`;
+     image.style.top = `${Math.random() * (containerRect.height - image.offsetHeight)}px`;
+     console.log(image);
+
+     // Устанавливаем случайные направления движения
+     directions[index] = {
+       dx: Math.random() < 0.5 ? speed : -speed,
+       dy: Math.random() < 0.5 ? speed : -speed,
+     };
+   });
+
+   // Анимация
+   function animate() {
+    console.log("1"); 
+    images.forEach((image, index) => {
+       const containerRect = container[0].getBoundingClientRect();
+       const imgRect = image.getBoundingClientRect();
+
+       // Получаем текущие координаты
+       let x = parseFloat(image.style.left);
+       let y = parseFloat(image.style.top);
+
+       // Обновляем координаты
+       x += directions[index].dx;
+       y += directions[index].dy;
+
+       // Проверяем границы контейнера
+       if (x <= 0 || x + imgRect.width >= containerRect.width) {
+         directions[index].dx *= -1; // Меняем направление по X
+       }
+       if (y <= 0 || y + imgRect.height >= containerRect.height) {
+         directions[index].dy *= -1; // Меняем направление по Y
+       }
+
+       // Устанавливаем новые координаты
+       image.style.left = `${x}px`;
+       image.style.top = `${y}px`;
+     });
+
+     // Запускаем следующий кадр
+     requestAnimationFrame(animate);
+   }
+
+   // Запуск анимации
+   animate();
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (movingTechnologies);
+
+/***/ }),
+
 /***/ "./src/js/modules/sidepanel.js":
 /*!*************************************!*\
   !*** ./src/js/modules/sidepanel.js ***!
@@ -1155,9 +1230,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_skillsStripes__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/skillsStripes */ "./src/js/modules/skillsStripes.js");
 /* harmony import */ var _modules_stick__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/stick */ "./src/js/modules/stick.js");
 /* harmony import */ var _modules_theme__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/theme */ "./src/js/modules/theme.js");
+/* harmony import */ var _modules_movingTechnologies__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/movingTechnologies */ "./src/js/modules/movingTechnologies.js");
 
 
 ;
+
 
 
 
@@ -1187,6 +1264,8 @@ window.addEventListener("DOMContentLoaded", () => {
     (0,_modules_stick__WEBPACK_IMPORTED_MODULE_6__["default"])();
 
     (0,_modules_theme__WEBPACK_IMPORTED_MODULE_7__["default"])();
+
+    (0,_modules_movingTechnologies__WEBPACK_IMPORTED_MODULE_8__["default"])();
 })
 
 

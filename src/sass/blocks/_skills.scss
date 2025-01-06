@@ -16,8 +16,8 @@
     margin-top: 60px;
     padding: 0 11px;
     display: grid;
-    grid-template-columns: repeat(4, 270px);
-    grid-template-rows: repeat(2, minmax(270px, auto));
+    grid-template-columns: repeat(8, 130px);
+    grid-template-rows: repeat(2, 130px);
     gap: 13px;
     &-second {
       display: grid;
@@ -29,8 +29,29 @@
     }
   }
   &__item {
-    padding: 30px;
-    border: 1px solid #000000;
+    padding: 40px;
+  
+    display: flex;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  
+    &::before {
+      content: '';
+      position: absolute;
+      inset: -2px; /* Расширяем псевдоэлемент за пределы блока */
+      background: linear-gradient(45deg, 
+        red, orange, yellow, green, cyan, blue, violet, red);
+      background-size: 300% 300%; /* Увеличиваем размер градиента для плавности */
+      z-index: -1; 
+      animation: gradient-animation 7s infinite;
+    }
+    img {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+    }
     &-title {
       margin-top: 20px;
     }
